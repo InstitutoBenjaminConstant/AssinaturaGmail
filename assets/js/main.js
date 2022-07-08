@@ -35,14 +35,14 @@ document.body.removeChild(container)
 }
 
 
-document.querySelector('#copy').onclick = function () {
+document.querySelector('#copyView').onclick = function () {
   // var nome = documet.querySelector('#nome').value();
   // var cargo = documet.querySelector('#cargo').value();
   // var telefone = documet.querySelector('#telefone').value();
   
-  var nome = "Rogerio Sousa"
-    var cargo = "Tecnico Programador"
-    var telefone = "(21) 3478-4539"
+    var nome = document.querySelector('#nome').value;
+    var cargo = document.querySelector('#cargo').value;
+    var telefone = document.querySelector('#telefone').value;
     
     
     var html = "<table id='assinatura'><tr><td style='border-right: 1px solid black;'><img style='width: 80px;padding-right: 10px;' src='assets/img/icons/brasao.png'/></td><td><p style='font-family:arial, sans-serif;font-size: 0.9em;margin-left: 5px;    line-height: 1.1em;'><b>"+nome+"</b><br /><span>"+cargo+"</span><br /><span>"+telefone+"</span><br /><a href='http://www.gov.br/ibc' target='_blank' >www.gov.br/ibc</a><br/><span style='display:inline-block;margin-top:3px;'><a href='https://www.youtube.com/channel/UC_Hv0mKFrLdNsqKMnBoT6uQ' target='_blank'><img src='assets/img/icons/youtube-app.png' style='width:20px'/></a><a href='https://www.facebook.com/InstBenjaminConstant'  target='_blank'><img src='assets/img/icons/facebook-app.png' style='width:20px'/></a><a href='https://twitter.com/ibconstant' target='_blank'><img src='assets/img/icons/twitter-app.png' style='width:20px'/></a></span></p></td></tr></table>";
