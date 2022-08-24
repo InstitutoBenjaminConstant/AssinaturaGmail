@@ -26,17 +26,21 @@
 
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome"> 
+                        <input type="text" class="form-control" id="nome" minlength="8"  required oninput="validar()"> 
+                        <span class="span-required">O nome deve ter no mínimo 8 caracteres</span>
                     </div>
                     <div class="mb-3">
                         <label for="cargo" class="form-label">Cargo</label>
-                        <input type="text" class="form-control" id="cargo"> 
+                        <input type="text" class="form-control" id="cargo" minlength="5" required oninput="validar()"> 
                     </div>
                     <div class="mb-3">
                         <label for="telefone" class="form-label">Telefone</label>
-                        <input type="tel" class="form-control" id="telefone" required pattern="[0-9]{2} [0-9]{4}-[0-9]{4}">
+                        <input type="tel" class="form-control" id="telefone" required pattern="[0-9]{2}[0-9]{4}-[0-9]{4}" maxlength="14" title="Insira o número no padrão informado">
                         <small>Formato (xx)xxxx-xxxx</small>
+                         
                     </div>
+                    
+                    
 
                 
                 </form>

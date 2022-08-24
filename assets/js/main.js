@@ -39,7 +39,7 @@ document.querySelector('#copyView').onclick = function () {
   // var nome = documet.querySelector('#nome').value();
   // var cargo = documet.querySelector('#cargo').value();
   // var telefone = documet.querySelector('#telefone').value();
-  
+  validar();
     var nome = document.querySelector('#nome').value;
     var cargo = document.querySelector('#cargo').value;
     var telefone = document.querySelector('#telefone').value;
@@ -59,3 +59,81 @@ document.querySelector('#copyView').onclick = function () {
   var assinatura = document.querySelector("#assinatura");
   assinatura.innerHTML = html;
 }
+
+
+function setError(nome){
+  nome.style.border = '2px solid #e63636';
+  nome.style.display = "block";
+}
+
+function removeError(nome){
+  nome.style.border = '';
+  spans.nome.style.display = 'none';
+}
+
+
+
+
+function validar(){
+  var nome=document.querySelector("#nome")
+  if(nome.value=="" || nome.value.length < 9)
+  {
+    //alert("Preencha o campo NOME corretamente");
+    //document.nome.focus();
+    //return false;
+    setError(nome);
+  }
+  else
+  {
+    removeError(nome);
+  }
+  
+  
+  
+  
+  var cargo=document.querySelector("#cargo")
+  if(cargo.value=="" || cargo.value.length < 5)
+  {
+    //alert("Preencha o campo CARGO corretamente");
+    //document.cargo.focus();
+    //return false;
+    setError(cargo);
+  }
+  else
+  {
+    removeError(cargo);
+  }
+
+  var telefone= ('(00)0000-0000');
+  var regex= new RegExp ('/^\(\d{2}\)\d{4,5}-\d{4}$/');
+  if(regex.test(telefone)){
+  ! true;
+  }
+  {
+   //alert("Preencha o campo TELEFONE corretamente");
+   //document.telefone.focus();
+   
+   return false;
+
+  }
+
+  //var telefone=document.querySelector("#telefone")
+  //
+  //if(telefone.value=="" || telefone.value.length != 13 )
+  //{
+  //  alert("Preencha o campo TELEFONE corretamente");
+  //  document.telefone.focus();
+  //  return false;
+  //}
+  
+  //return true;
+
+
+  //var telefone=document.querySelector("#telefone") 
+
+}
+  
+
+
+ 
+
