@@ -24,14 +24,15 @@
 
                 <form>
 
-                    <div class="mb-3">
+                    <div class="mb-3 form-group">
                         <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome" minlength="8"  required oninput="validar()"> 
-                        <span class="span-required">O nome deve ter no mínimo 8 caracteres</span>
+                        <input type="text" class="form-control" id="nome" minlength="8"  required"> 
+                        <span class="alerta">O nome deve ter no mínimo 8 caracteres</span>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group">
                         <label for="cargo" class="form-label">Cargo</label>
-                        <input type="text" class="form-control" id="cargo" minlength="5" required oninput="validar()"> 
+                        <input type="text" class="form-control" id="cargo" minlength="5" required"> 
+                        <span class="alerta">O cargo deve ter no mínimo 5 caracteres</span>
                     </div>
                     <div class="mb-3">
                         <label for="telefone" class="form-label">Telefone</label>
