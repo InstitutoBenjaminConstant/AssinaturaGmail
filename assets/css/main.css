@@ -76,7 +76,7 @@
 
 
 
-  .spans-required{
+  /*.spans-required{
     display: none;
     color: brown;
   }
@@ -89,12 +89,13 @@
     border-color: red;
   }
   
-  .form-group.error .alerta {
+  .form-group.error .alert {
     display: block;    
   }
   
-  .alerta{
+  .alert{
     color: red;    
     display: none;
+    font-size: 15px;
   }
 
